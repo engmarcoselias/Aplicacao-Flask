@@ -100,7 +100,13 @@ Site:
 https://jinja.palletsprojects.com/en/3.1.x/
 
 Query String:
-https://www.devmedia.com.br/conceitos-e-exemplo-pratico-usando-querystring/18094
+https://www.devmedia.com.br/conceitos-e-exemplo-pratico-usando-querystring/1809
+
+
+-------------------------------Bootstrap--------------------------------------
+
+
+https://getbootstrap.com
 
 
 ---------------------------Comandos CMD---------------------------------------

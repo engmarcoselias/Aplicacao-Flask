@@ -1,19 +1,21 @@
-{% extends 'index.html' %}
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loguin</title>
-</head>
-<body>
-    
-   {% block content %}
-   <div>
-    <p>Exemplo de extenção de arquivo com blocos</p>
+{% extends 'base.html' %}
 
-</div>
-   {% endblock %}
-    
-</body>
-</html>
+{% block loguin %}
+<form action="" method="POST">
+    {{ form.csrf_token }}
+        <div class="form-group">
+            <label for="username">Username</label>
+        {{form.username(_class="form-group", placeholder="seu_usuario")}} 
+        </div><br>
+        <div class="form-group">
+            <label for="password">Password</label>
+            {{ form.password(_class="form-control")}}
+        </div>
+        <div class="checkbox">
+           <label>
+            {{ form.remenber_me}} Remember me
+           </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+{% endblock %}

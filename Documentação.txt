@@ -109,6 +109,11 @@ https://www.devmedia.com.br/conceitos-e-exemplo-pratico-usando-querystring/1809
 https://getbootstrap.com
 
 
+--------------------------------Flask WTF-------------------------------------
+
+https://flask-wtf.readthedocs.io/en/1.1.x/
+
+
 ---------------------------Comandos CMD---------------------------------------
 
 Manipular arquivos pelo CMD
@@ -116,5 +121,8 @@ Manipular arquivos pelo CMD
 Criar Diretorio: mkdir
 Criar arquivo: type nul >
 Deletar Arquivo: del 
-Limpar CMD: CLS 
+Limpar CMD: CLS
+
+----------------------------Atalhos VS code------------------------
+https://www.youtube.com/watch?v=J9zepG022gw
 

@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
-    <title>Home</title>
-</head>
-<body>
-    
-   <div>
-        <h1>Aplicação Python</h1>
-        {% if user %}
-        <p>Seja bem vindo {{user}}</p>
-        {% else %}
-        <p>Obrigado</p>
-        {% endif %}
-   </div>
-   {% block content %}
-   <p>Bloco de conteudo</p>
-   {% endblock %}
+{% extends 'base.html' %}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>  
+
+{% block title %} {{ super() }}- Home {% endblock %} <!--usado para modificar titulo mas sem substituir mantendo o que esta na pagina base-->
+
+{% block teste %}
+    <div>
+        <h1>Utilizando exteção de template</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab fuga magni hic illum consectetur dicta optio possimus nobis, corrupti excepturi commodi in porro veniam recusandae animi eos saepe, autem dignissimos.
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae libero facilis natus illum quas, omnis ducimus inventore nulla suscipit cumque aut, aliquam cupiditate placeat rerum? Repudiandae totam veritatis aperiam repellat.</p>
+        </p>
+    </div>
     
+   
+
+{% endblock %}
 </body>
 </html>

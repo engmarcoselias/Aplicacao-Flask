@@ -34,6 +34,15 @@ https://flask-migrate.readthedocs.io/en/latest/#example
 
 Comando para migração: py -m flask db init
 
+Flask login:
+
+https://flask-login.readthedocs.io/en/latest/#installation
+
+Flask flash:
+
+https://flask.palletsprojects.com/en/2.3.x/patterns/flashing/
+
+
 
 
 Estudos:
@@ -72,6 +81,8 @@ https://chocolatey.org/
 
 -pip
 -Ambiente virtual
+
+instalar pacote alternativa: python -m pip install
 
 -------------------------------------API----------------------
 

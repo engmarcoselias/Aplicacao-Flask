@@ -6,7 +6,7 @@
     <title>{% block title %} Aplicação {% endblock %}</title>
 </head>
 <body>
-    <div>
+   
         <h1>Aplicação Python</h1>
         {% if user %}
         <p>Seja bem vindo {{user}}</p>
@@ -17,6 +17,18 @@
 
    {% block loguin %}
    {% endblock %}
+   {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="alert alert-warning">   
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </div>
+    </ul>
+    {% endif %}
+    {% endwith %}
+    
    
    <p>Bloco de conteudo</p>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas porro amet laudantium reiciendis aliquam tempora nesciunt laboriosam vitae fuga? Numquam veniam animi fugit nesciunt fugiat quod culpa aliquid temporibus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quo ut eos voluptates ipsum facere beatae incidunt eligendi, quia laudantium tempore officiis dolores, quibusdam modi magnam minus quidem deserunt vel?</p>

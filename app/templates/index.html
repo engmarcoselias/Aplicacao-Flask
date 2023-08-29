@@ -4,6 +4,19 @@
 {% block title %} {{ super() }}- Home {% endblock %} <!--usado para modificar titulo mas sem substituir mantendo o que esta na pagina base-->
 
 {% block teste %}
+<div class="menu">
+    <nav>
+        <ul>
+            <li>
+                {% if current_user.is_authenticated %}
+                <a href="{{url_for('logout')}}">Logout</a
+                   >
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
+</div>
+<div>
     <div>
         <h1>Utilizando exteção de template</h1>
 

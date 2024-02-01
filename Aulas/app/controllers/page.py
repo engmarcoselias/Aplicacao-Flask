@@ -59,10 +59,11 @@ def logout():
     db.session.commit()
     return "OK"
     ----------------------------------------------'''
-    '''----------------Delete------------------------
+    '''--------------------Delete--------------------
     r = User.query.filter_by(username="Marcos").first()
     print(r)
     db.session.delete(r)
     db.session.commit()    
     return "OK"
-    ----------------------------------------------'''
+    ----------------------------------------------#'''
+   

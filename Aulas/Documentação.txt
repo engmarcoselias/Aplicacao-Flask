@@ -69,6 +69,9 @@ https://www.hostinger.com.br/tutoriais/o-que-e-json#:~:text=Usando%20Arrays-,O%2
 Para teste de requisição:
 https://jsonplaceholder.typicode.com/
 
+Query String:
+https://www.devmedia.com.br/conceitos-e-exemplo-pratico-usando-querystring/18094
+
 Software:
 
 -Testes de requisição:
@@ -105,13 +108,20 @@ https://ondras.zarovi.cz/sql/demo/?keyword=default
 
 -----------------------------------------------------------------
 
--------------------Jinja para Tamplates-----------------------------------------
+-------------------Jinja para TEmplates-----------------------------------------
 
 Site:
 https://jinja.palletsprojects.com/en/3.1.x/
 
-Query String:
-https://www.devmedia.com.br/conceitos-e-exemplo-pratico-usando-querystring/1809
+Exemplo cohecendo Jinja2:
+https://imasters.com.br/desenvolvimento/conhecendo-o-jinja2-um-mecanismo-para-templates-no-flask
+
+Parametros:
+https://pushmetrics.io/docs/workflows/parameters-jinja-2/
+
+
+
+
 
 
 -------------------------------Bootstrap--------------------------------------

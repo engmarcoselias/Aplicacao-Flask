@@ -60,7 +60,7 @@ def novo():
     #renderiza o template novo
 
 
-#configuração da rpta criar que usa o método post para enviar dados dos nossos pokemons
+#configuração da rota criar que usa o método post para enviar dados dos nossos pokemons
 @app.route('/criar', methods=['POST',])
 def criar():
     nome = request.form['nome']
@@ -69,7 +69,7 @@ def criar():
     pokemon = Pokemon(nome, especie, tipo)
     lista.append(pokemon)
     return redirect(url_for('index'))
-#ja inclui o onvo pokemon na lista e joga na tela inicial
+#ja inclui o novo pokemon na lista e joga na tela inicial
 
 
 #configuração da rota loguin

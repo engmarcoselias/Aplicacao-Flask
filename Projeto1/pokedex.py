@@ -63,7 +63,7 @@ def novo():
 #configuração da rota criar que usa o método post para enviar dados dos nossos pokemons
 @app.route('/criar', methods=['POST',])
 def criar():
-    nome = request.form['nome']
+    nome = request.form['nome']#https://cursos.alura.com.br/forum/topico-request-form-get-name-ou-request-form-name-331196
     especie = request.form['especie']
     tipo = request.form['tipo']
     pokemon = Pokemon(nome, especie, tipo)

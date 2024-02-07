@@ -119,6 +119,10 @@ https://imasters.com.br/desenvolvimento/conhecendo-o-jinja2-um-mecanismo-para-te
 Parametros:
 https://pushmetrics.io/docs/workflows/parameters-jinja-2/
 
+reques.form:
+
+https://cursos.alura.com.br/forum/topico-request-form-get-name-ou-request-form-name-331196
+
 
 
 ----------------------Argumentos de solicitação:-----------------------------------------

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jinja2</title>
+</head>
+<body>
+
+    {#  #}<!--COMENTARIO JINJA2-->
+
+    {{ a + b}}<!--VARIAVEIS-->
+
+    {% if x > 5 %}<!--BLOCO DE DECLARAÇÕES-->
+        <p>Maior que 5</p>
+    {% elif x == 5  %}
+        <p>Igual a 5</p>
+
+    {% else %}
+        <p>Menor que 5</p>
+    {% endif %}<!--FIM DO BLOCO -->
+
+</body>
+</html>

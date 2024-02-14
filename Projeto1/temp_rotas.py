@@ -28,6 +28,7 @@ def param():
     name = request.args.get('name')
     return "Hello, {}!".format(name)
 
+
 #---------------------Exemplo de requisição calculadora--------------------
 
 @app.route('/cal')
@@ -54,6 +55,7 @@ def cal():
     return f'{a} {operator} {b} = {result}'
   else:
     return 'Error: Insufficient arguments'
+  
 
 
 

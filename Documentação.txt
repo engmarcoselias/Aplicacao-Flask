@@ -4,6 +4,7 @@ Site:
 https://flask.palletsprojects.com/en/2.3.x/
 
 Video aula:
+
 https://www.youtube.com/watch?v=MysMy8aV2NA&list=PLWhiA_CuQkbBhvPojHOPY81BmDt2eSfgI
 
 Estrutura Flask pastas:

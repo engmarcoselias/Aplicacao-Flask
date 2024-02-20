@@ -20,5 +20,15 @@
         <p>Menor que 5</p>
     {% endif %}<!--FIM DO BLOCO -->
 
+    <hr>
+
+    <table>
+        {% for k, v in query.itens() %}
+        <tr>
+            <th>{{ k }}</th>
+            <td>{{ v }}</td>
+        </tr>
+        {% endfor%}
+    </table>
 </body>
 </html>

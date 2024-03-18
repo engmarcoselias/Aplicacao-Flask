@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquivos estaticos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"><!--passando metodo url_for para o diretorio raiz -->
+
 </head>
 <body>
     <h1>Teste Arquivos estaticos</h1>

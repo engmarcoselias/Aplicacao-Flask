@@ -64,7 +64,20 @@ def user(name1):
 #--------------------------------------Arquivos Estaticos-----------------------------------
 @app.route("/static")
 def arq_static():
-    return "Static"
+    return render_template('static.html')
+
+#--------------------------------------Métodos HTTP-----------------------------------------
+#CONNECT
+#DELETE
+#GET
+#HEAD
+#OPTIONS
+#PATH
+#POST
+#PUT
+#TRACE
+
+
 '''
 #---------------------Exemplo de requisição calculadora--------------------
 
@@ -94,10 +107,6 @@ def cal():
     return 'Error: Insufficient arguments'
   #---------------------------------------------------------------------------------
 '''
-
-    
-
-
 
 if __name__== '__main__':
     app.run(port=5000, host='localhost', debug=True)# debug quando esta em True mostra traceback da aplicação

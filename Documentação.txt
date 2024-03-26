@@ -68,6 +68,10 @@ https://www.devmedia.com.br/servicos-restful-verbos-http/37103
 Codigos de status de resposta HTTP:
 https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
 
+
+Tutorial metodos de requisição:
+https://www.digitalocean.com/community/tutorials/processing-incoming-request-data-in-flask-pt
+
 Estudos complemento:
 
 -Arquivo Json

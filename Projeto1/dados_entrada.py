@@ -46,7 +46,52 @@ def form_example():
 
 @app.route('/json-example',methods=['POST'])
 def json_example():
-    return 'JSON Object Example'
+    request_data = request.get_json()
+
+    '''Se o objeto JSON enviado com a solicitação não tiver uma chave que seja acessada na sua função de visualização, então a solicitação falhará. Se não quiser que ela falhe quando uma chave não existir, será necessário verificar se a chave existe antes de tentar acessá-la.'''
+
+    language = None
+    framework = None
+    python_version = None
+    example_test = None
+    boolean_test = None
+
+#Verificação se a chave existe
+    if request_data:
+        if 'language' in request_data:
+            language = request_data['language']
+
+        if 'framework' in request_data:
+            framework = request_data['framework']
+
+        if 'version_info' in request_data:
+            if 'python' in request_data['version_info']:
+                python_version = request_data['version_info']['python']
+
+        if 'examples' in request_data:
+            if (type(request_data['examples']) == list) and (len(request_data['examples']) > 0):
+                example = request_data['examples'][0]
+
+        if 'boolean_test' in request_data:
+            boolean_test = request_data['boolean_test']            
+    
+    language = request_data['language']
+    framework = request_data['framework']
+
+    #duas keys são por conta do objeto aninhado
+    python_version = request_data['version_info']['flask']
+
+    #um indice e necessario por conta do array
+    example_test = request_data['examples'][0]
+
+    boolean_test = request_data['boolean_test']
+
+    return '''
+            The language value is: {}
+            The framework value is:{}
+            The Python version is:{}
+            The item at index 0 the example list is: {}
+            The boolean value is: {}'''.format(language, framework, python_version, example_test, boolean_test)
 
 
 if __name__ == '__main__':

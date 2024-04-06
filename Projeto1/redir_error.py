@@ -10,7 +10,7 @@ def index():
 def loguin():
     if request.method == 'POST':
         if request.form['username'] == 'admin'and request.form['pass'] == 'admin':
-            return redirect(url_for('sucesso'),code=200)
+            return redirect(url_for('sucesso'),code=200)#codigo pra direcionamento automatico é 302
         else:
             abort(401)
     else:

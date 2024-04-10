@@ -25,6 +25,8 @@ https://www.lewagon.com/pt-BR/blog/o-que-e-padrao-mvc?utm_campaign=&utm_adgroup=
 Criando Ambiente virtual:
 https://www.alura.com.br/artigos/ambientes-virtuais-em-python?gclid=EAIaIQobChMIqP7fronD_QIVtxTUAR3XCAL3EAAYASAAEgLNbvD_BwE
 
+OBS: PARA RODAR O PROJETO EM OUTRA MAQUINA REPLICAR O AMBIENTE PARA EXPORTAR TODAS AS BIBLIOTECAS.
+
 Video:
 https://www.youtube.com/watch?v=m1TYpvIYm74
 

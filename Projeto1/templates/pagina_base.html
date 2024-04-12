@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança de templates</title>
+    <style>
+        h1{
+            color: blueviolet;
+        }
+        p{
+            color: chocolate;
+            text-align: justify;
+            text-decoration: solid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!--Herança de templates: Tudo que esta fora do bloco sera adicionado a pagina atual se(se for a pagina base) e a  outras paginas como herança(extends). A formatação da pagina se mantem se o stylo for adicionado direto ao codigo-->
+        <h1>Titulo Pagiana Base</h1>
+        
+        <p>Fora do bloco pagina base: <br> 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi itaque incidunt amet ipsa voluptate aperiam placeat minus quisquam reiciendis. Eveniet labore nam dignissimos autem error iure, doloremque ratione ipsam ex!
+        </p>
+
+        {% block content %}
+        <!--Herança de templates: Tudo que está dentro do bloco so sera adicionada a pagina atual-->
+
+       <p> Dentro do bloco pagina base:  <br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo alias ducimus voluptatem veniam dolor? Praesentium iste rerum, excepturi quaerat ullam similique, nemo explicabo tenetur quidem, tempora tempore. Voluptas, eligendi voluptatibus?</p>
+
+        {% endblock%}
+        
+       <p>Fora do bloco pagina base:</p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, culpa quos a, ipsa sed nulla vitae doloremque exercitationem qui eligendi voluptas odio inventore eveniet ullam illum minus! Illum, ab molestias?
+</body>
+</html>

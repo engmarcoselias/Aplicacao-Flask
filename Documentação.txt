@@ -41,9 +41,7 @@ Flask-Migrate:
 
 https://flask-migrate.readthedocs.io/en/latest/#example
 
-No lugar de “python3 run.py runserver” use o comando  “flask run”, 
-Ao invés de “python3 run.py db init” use o comando “flask db init”
-Ao invés de “python3 run.py db migrate”  use o comando “flask db migrate”
+
 
 
 Comando para migração: py -m flask db init

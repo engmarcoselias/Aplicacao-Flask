@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Crud</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 style="text-align: center;"> Crud Usuarios</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="/add">Adicionar Usuario</a>
+            </div>
+            <div class="col-xs-12">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Senha</th>
+                        <th>Ações</th>
+                    </tr>
+                    </thead>
+                <tbody>
+                    {% for e in usuario %}
+                    <tr>
+                        <td>{{ e.nome }}</td>
+                        <td>{{ e.password }}</td>
+                        <td>
+                            <a href="/edit/{{id}}">Editar</a>
+                            <a href="/delete/{{id}}">Excluir</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                 </table>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

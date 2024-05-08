@@ -20,7 +20,7 @@ def inicio():
     usuario = Usuario.query.all()
     return render_template('inicio.html', usuario=usuario)
 
-@app.route('/add',methods=['GET','POST'])
+@app.route('/add', methods=['GET','POST'])
 def add():
     if request.method == 'POST':
         usuario = Usuario(request.form['nome'], request.form['password'])
@@ -28,6 +28,14 @@ def add():
         db.session.commit()# commite para confirmar processo ao banco de dados
         return redirect(url_for('inicio'))
     return render_template('add.html')
+
+@app.route("/edit/<int:id>", methods=['GET','POST'])
+def edit(id):
+    usuario = Usuario.query.get(id)
+    if request.method == "POST":
+        redirect(url_for("inicio"))
+    return render_template('edit.html', usuario=usuario)
+
 
 @app.route('/delete/<int:id>')
 def delete(id):

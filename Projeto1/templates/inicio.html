@@ -28,8 +28,8 @@
                         <td>{{ e.nome }}</td>
                         <td>{{ e.password }}</td>
                         <td>
-                            <a href="/edit/{{id}}">Editar</a>
-                            <a href="/delete/{{id}}">Excluir</a>
+                            <a href="/edit/{{e.id}}">Editar</a> |
+                            <a href="/delete/{{e.id}}">Excluir</a>
                         </td>
                     </tr>
                     {% endfor %}

@@ -33,7 +33,10 @@ def add():
 def edit(id):
     usuario = Usuario.query.get(id)
     if request.method == "POST":
-        redirect(url_for("inicio"))
+        usuario.nome = request.form['nome']
+        usuario.password = request.form['password']
+        db.session.commit()
+        return redirect(url_for('inicio'))
     return render_template('edit.html', usuario=usuario)
 
 
